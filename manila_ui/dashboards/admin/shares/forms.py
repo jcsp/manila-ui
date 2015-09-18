@@ -56,7 +56,7 @@ class ManageShare(forms.SelfHandlingForm):
     protocol = forms.ChoiceField(
         label=_("Share Protocol"), required=True,
         choices=(('NFS', 'NFS'), ('CIFS', 'CIFS'), ('GlusterFS', 'GlusterFS'),
-                 ('HDFS', 'HDFS')))
+                 ('HDFS', 'HDFS'), ('CephFS', 'CephFS')))
     share_type = forms.ChoiceField(label=_("Share Type"), required=True)
 
     driver_options = forms.CharField(
